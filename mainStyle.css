@@ -1,0 +1,89 @@
+#content {
+    display: none;
+}
+
+#message {
+    display: block;
+}
+
+/* only when orientation is in portrait mode */
+@media all and (orientation:landscape) {
+    #content {
+        display: block;
+    }
+
+    #message{
+        display:none;
+    }
+}
+
+
+body{
+    background-color: black;
+    margin:auto;
+}
+
+.rotate_message {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:50%;
+    left:50%;
+    overflow:visible;
+}
+
+img.rotate_img {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-50%;
+    margin-left:-50%;
+}
+
+img.logo_img{
+    display: block;
+    margin: 0 auto;
+    width:25%
+}
+
+h1 {
+    margin-top:100px;
+    font-family: "Ubuntu";
+    color : white;
+    font-size:30px;
+    text-align: center;
+    padding:10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.section {
+  align-items: center;
+  background: url('img/main.jpg') no-repeat center / cover;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+  position: sticky;
+  width: 100%;
+  z-index: -1;
+}
+
+.section:nth-child(2) {
+  background-image: url('img/message.jpg');
+	z-index: -2;
+}
+
+.section:nth-child(3) {
+  background-image: url('img/vs.jpg');
+	z-index: -3;
+}
