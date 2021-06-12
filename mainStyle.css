@@ -23,6 +23,10 @@ body{
     margin:auto;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .rotate_message {
     position:absolute;
     max-width:45%;
