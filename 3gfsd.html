@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon/T.png">
+    <title>Triangle</title>
+
+
+    <style>
+        body {
+            background-color: #086972;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .square {
+            background-color: none;
+            width: 0;
+            height: 0;
+            cursor: pointer;
+            margin: 20px;
+            border: none;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 60px solid #fbfd8a;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="3x3">
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="3x3">
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+    </div>
+
+    <div id="3x3">
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a href = "end.html">
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="3x3">
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="3x3">
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+
+        <div class="row">
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+            <a>
+                <div class="square" onclick="playMusic()"></div>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        $(".square").mouseenter(function () {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            $(this).css("border-bottom", "60px solid #" + randomColor);
+        });
+
+        $(".square").mouseleave(function () {
+            $(this).css("border-bottom", "60px solid #fbfd8a");
+        });
+
+        var audio = new Audio('audio/evil.mp3');
+
+        function playMusic() {
+            audio.play();
+            setTimeout(function () {
+                audio.pause()
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

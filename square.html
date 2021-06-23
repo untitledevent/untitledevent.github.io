@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon/S.png">
+    <title>Square</title>
+
+
+    <style>
+        body {
+            background-color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .square {
+            background-color: #f35656;
+            width: 90px;
+            height: 90px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div id="3x3">
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+</div>
+
+
+<div id="3x3">
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+</div>
+
+<div id="3x3">
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+</div>
+
+
+<div id="3x3">
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a href="24dsf.html">
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+</div>
+
+
+<div id="3x3">
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+        <a>
+            <div class="square" onclick="playMusic()"></div>
+        </a>
+    </div>
+</div>
+
+
+<script>
+    $(".square").mouseenter(function () {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        $(this).css("background-color", "#" + randomColor);
+    });
+
+    $(".square").mouseleave(function () {
+        $(this).css("background-color", "#f35656");
+    });
+
+    var audio = new Audio('audio/meg.mp3');
+
+    function playMusic() {
+        audio.play();
+        setTimeout(function () {
+            audio.pause()
+        }, 2000);
+    }
+</script>
+</body>
+
+</html>
